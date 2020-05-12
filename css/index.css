@@ -1,1 +1,255 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1.5;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: lato;
+}
+@font-face {
+  font-family: 'DM Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('DM Mono Regular'), local('DMMono-Regular'), url(https://fonts.gstatic.com/s/dmmono/v1/aFTU7PB1QTsUX8KYhh0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v16/S6u8w4BMUTPHjxswWw.ttf) format('truetype');
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0% 10% 0 10%;
+  margin-bottom: 2%;
+}
+header h1 {
+  color: #21242c;
+  text-transform: uppercase;
+  font-family: Lato;
+  font-weight: 900;
+  font-size: 58px;
+  width: 30%;
+  margin: 0% 2.5%;
+  line-height: 1;
+}
+header a {
+  display: flex;
+  flex-direction: column;
+  font-family: lato;
+  text-decoration: none;
+  width: 500px;
+  margin: 0% 10% 0 10%;
+  font-size: 16px;
+  color: #21242c;
+  font-weight: 500;
+  line-height: 140%;
+}
+header a:first-child {
+  display: flex;
+  flex-direction: column;
+  font-family: lato;
+  text-decoration: none;
+  width: 500px;
+  margin: 0% 10% 0 10%;
+  color: #FFAF32;
+}
+.contact {
+  margin: 1% 8% 1% 0;
+  text-align: left;
+}
+body section {
+  margin: 0% 10% 0 10%;
+  display: flex;
+  justify-content: space-between;
+}
+body section h2 {
+  color: #FFAF32;
+  font-size: 24px;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 800;
+  line-height: 150%;
+}
+body section h3 {
+  color: #21242c;
+  font-weight: 600;
+  font-size: 18px;
+}
+body section h4 {
+  color: #4A4C4F;
+  font-weight: 500;
+  font-size: 16px;
+}
+body section ul li {
+  color: #717378;
+  font-size: 14px;
+  font-weight: 500;
+}
+body section p {
+  color: #717378;
+  font-size: 14px;
+  font-weight: 500;
+}
+.projects-content {
+  padding: 0 7% 2% 0;
+  margin: 0% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.skills-content {
+  padding: 0 3% 2% 1%;
+  width: 90%;
+  margin: 2% 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.expe-content {
+  padding: 0 7% 2% 0;
+  margin: 0% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.education,
+.skills {
+  width: 50%;
+}
+.edu-context {
+  padding: 0 7% 2% 0;
+  width: 80%;
+  margin: 0% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

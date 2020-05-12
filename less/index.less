@@ -30,11 +30,9 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.5;
 }
-ol, ul {
-	list-style: none;
-}
+
 blockquote, q {
 	quotes: none;
 }
@@ -54,6 +52,175 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-family: lato;
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&family=Lato:ital@1&display=swap');
+
+//Variables
+@calorsito: #FFAF32;
+@darkertext: #21242c;
+@midgray: #4A4C4F;
+@lightgray: #717378;
+
+
+//mixins
+.titles(){
+	color: @calorsito;
+	font-size: 24px;
+	text-align: left;
+	font-weight: 800;
+	line-height: 150%;
+	.margins();
+}
+.twosections(){
+	display: flex;
+	justify-content: space-between;
+}
+
+.block(){
+	display:flex;
+	flex-direction: column;
+	font-family: lato;
+	text-decoration: none;
+	width: 500px;
+	.margins();
+}
+.space(){
+	padding: 0 7% 2% 0;
+}
+
+.margins(){
+	margin: 0% 10% 0 10%;
+}
+
+
+header {
+	.twosections();
+	.margins();
+	margin-bottom: 2%;
+	h1{
+		color: @darkertext;
+		text-transform: uppercase;
+		font-family: Lato;
+		font-weight: 900;
+		font-size: 58px;
+		width: 30%;
+		margin: 0% 2.5%;
+		line-height: 1;
+
+	}
+
+	a{
+		.block();
+		font-size: 16px;
+		color: @darkertext;
+		font-weight: 500;
+		line-height: 140%;
+	}
+
+	a:first-child {
+		.block();
+		color: @calorsito;
+		
+	}
+
+}
+
+.contact {
+	margin:1% 8% 1% 0;
+	text-align: left;
+}
+
+body section{
+	.margins();
+	.twosections();
+	h2 {
+		color: @calorsito;
+		font-size: 24px;
+		text-align: left;
+		font-family: Lato;
+		font-weight: 800;
+		line-height: 150%;
+
+		}
+	h3{
+		color: @darkertext;
+		font-weight: 600;
+		font-size: 18px;
+	}
+
+	h4{
+		color: @midgray;
+		font-weight: 500;
+		font-size: 16px;
+	}
+	ul li{
+		color: @lightgray;
+		font-size: 14px;
+		font-weight: 500;
+	}
+
+	p{
+		color: @lightgray;
+		font-size: 14px;
+		font-weight: 500;
+	}
+
+}
+
+
+.projects-content{
+	.space();
+	margin:0% 5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.skills-content {
+	padding: 0 3% 2% 1%;
+	width: 90%;
+	margin:2% 3%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.expe-content{
+	.space();
+	margin:0% 5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.education, .skills{
+	width: 50%;
+}
+.edu-context {
+	.space();
+	width: 80%;
+	margin:0% 5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+// .education, .experience{
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: right;
+// }
+
+
+// .top-sec, .bottom-sec {
+// 	.space();
+// 	width: 52%;
+// 	display: flex;
+// 	// flex-direction: column;
+// 	justify-content: space-between;
+// }
